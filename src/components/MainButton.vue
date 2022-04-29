@@ -8,7 +8,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 button {
 	background: #ffffff;
 	color: #000000;
@@ -16,8 +16,7 @@ button {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	font-size: 1rem;
-	padding: 0.4em 1.8em;
-	margin: 1em 0;
+	padding: 0.5em 1.2em;
 	border-radius: 10px;
 	border: 2px solid #ffffff;
 	transition: all 0.3s ease-out;

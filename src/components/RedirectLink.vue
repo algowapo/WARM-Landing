@@ -1,5 +1,5 @@
 <template>
-	<a class="redirect-link offset-margin" :href="`${href}`">{{ text }}</a>
+	<a class="redirect-link" :href="`${href}`">{{ text }}</a>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .redirect-link {
 	display: inline-block;
 	vertical-align: top;

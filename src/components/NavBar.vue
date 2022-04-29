@@ -2,7 +2,7 @@
 	<nav>
 		<div class="brand">
 			<img class="nav-logo" src="../../public/favicon.png" alt="brand logo" />
-			<p class="nav-title offset-margin">warm</p>
+			<p class="nav-title">warm</p>
 		</div>
 		<div class="links-container">
 			<ScrollLink text="Funciones" href="#funciones" />
@@ -23,27 +23,22 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 0 10vw;
-	padding: 1vh 0;
+	padding: 2vh 0;
 }
 
 a {
 	font-size: 1rem;
 }
 
-.offset-margin {
-	margin-top: 4px;
-}
-
 .brand {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	transition: opacity 0.3s ease-out;
 }
@@ -54,10 +49,9 @@ a {
 }
 
 .nav-logo {
-	height: 4vh;
+	height: 3vh;
 	margin: auto 0;
 	margin-right: 1.5vh;
-	padding-bottom: 5px;
 }
 
 .nav-title {
@@ -80,5 +74,9 @@ a {
 
 .links-container > * {
 	margin-right: 5vh;
+}
+
+.links-container > button {
+	margin: auto 0;
 }
 </style>

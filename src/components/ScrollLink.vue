@@ -1,7 +1,5 @@
 <template>
-	<a class="scroll-link offset-margin" :href="`${href}`" v-smooth-scroll>{{
-		text
-	}}</a>
+	<a class="scroll-link" :href="`${href}`" v-smooth-scroll>{{ text }}</a>
 </template>
 
 <script>
@@ -10,7 +8,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .scroll-link {
 	display: inline-block;
 	vertical-align: top;
