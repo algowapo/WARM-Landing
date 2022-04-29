@@ -1,7 +1,7 @@
 <template>
 	<nav>
 		<div class="brand">
-			<img class="nav-logo" src="../../public/favicon.png" alt="brand logo" />
+			<img class="nav-logo" src="/favicon.png" alt="brand logo" />
 			<p class="nav-title">warm</p>
 		</div>
 		<div class="links-container">

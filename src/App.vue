@@ -4,6 +4,8 @@
 		<Home />
 		<Companies />
 		<Section1 />
+		<Functions />
+		<Plans />
 	</main>
 </template>
 
@@ -12,8 +14,10 @@ import NavBar from './components/NavBar.vue'
 import Home from './sections/Home.vue'
 import Companies from './sections/Companies.vue'
 import Section1 from './sections/Section1.vue'
+import Functions from './sections/Functions.vue'
+import Plans from './sections/Plans.vue'
 export default {
-	components: { NavBar, Home, Companies, Section1 },
+	components: { NavBar, Home, Companies, Section1, Functions, Plans },
 }
 </script>
 

@@ -41,6 +41,7 @@ export default {
 .box-top {
 	display: flex;
 	align-items: center;
+	margin-top: 2rem;
 }
 
 .home-top {
@@ -51,7 +52,7 @@ export default {
 
 .box-title {
 	width: 700px;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
 .home-title {
