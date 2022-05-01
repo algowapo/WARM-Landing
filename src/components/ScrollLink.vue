@@ -1,5 +1,10 @@
 <template>
-	<a class="scroll-link" :href="`${href}`" v-smooth-scroll>{{ text }}</a>
+	<a
+		class="scroll-link text-left lg:text-center"
+		:href="`${href}`"
+		v-smooth-scroll
+		>{{ text }}</a
+	>
 </template>
 
 <script>
@@ -10,10 +15,10 @@ export default {
 
 <style scoped>
 .scroll-link {
+	font-size: 1rem;
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-	text-align: center;
 	/* TODO: change to em/rem */
 	padding: 20px 10px 10px 10px;
 	line-height: 24px;

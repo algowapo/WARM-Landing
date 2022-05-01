@@ -10,6 +10,7 @@ export default {
 
 <style scoped>
 .redirect-link {
+	font-size: 1rem;
 	display: inline-block;
 	vertical-align: top;
 	padding-bottom: 10px;
