@@ -1,5 +1,5 @@
 <template>
-	<section id="section1">
+	<section id="section1" class="flex justify-center py-40">
 		<MainCard />
 	</section>
 </template>
@@ -11,11 +11,4 @@ export default {
 }
 </script>
 
-<style scoped>
-#section1 {
-	display: flex;
-	justify-content: center;
-	padding-top: 20vh;
-	padding-bottom: 10vh;
-}
-</style>
+<style scoped></style>

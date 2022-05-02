@@ -1,26 +1,36 @@
 <template>
-	<div class="main-card">
-		<div class="left-col">
+	<div
+		class="w-full lg:w-9/12 flex flex-col rounded-lg lg:flex-row p-10 bg-dark-gray space-x-0 xl:space-x-4 lg:space-x-2"
+	>
+		<div class="w-full lg:w-1/2 xl:w-8/12">
 			<img
-				class="main-card-img"
+				class="rounded-lg w-[300px] h-[300px] mx-auto lg:mx-0"
 				src="../assets/PlaceholderHolo.png"
 				alt="PlaceHolder Holo Image"
 			/>
-			<p class="card-pre-title">SMALL PRE-TITLE - USE A HIGHLIGHT COLOR</p>
-			<h2 class="card-title">Nice and simple header</h2>
-			<p class="card-text">
+			<p class="text-light-gray uppercase my-6 text-center lg:text-left my-10">
+				SMALL PRE-TITLE - USE A HIGHLIGHT COLOR
+			</p>
+			<h2 class="text-4xl font-semibold text-center lg:text-left my-10">
+				Nice and simple header
+			</h2>
+			<p class="card-text font-regular text-center lg:text-left my-10">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim.
 			</p>
-			<MainButton text="Button" />
+			<div class="flex justify-center lg:justify-start my-10">
+				<MainButton text="Button" />
+			</div>
 		</div>
-		<div class="right-col">
-			<div class="top-row">
+		<div
+			class="w-full lg:w-1/2 xl:w-4/12 flex flex-col items-around justify-around"
+		>
+			<div class="min-h-[30%] py-4 flex items-center border-b border-white">
 				<Segment />
 			</div>
-			<div class="middle-row">
+			<div class="min-h-[30%] py-4 flex items-center border-b border-white">
 				<Segment />
 			</div>
-			<div class="bottom-row">
+			<div class="min-h-[30%] py-4 flex items-center">
 				<Segment />
 			</div>
 		</div>
@@ -35,59 +45,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.main-card {
-	width: 70%;
-	background: #1f2029;
-	display: flex;
-	flex-direction: row;
-	border-radius: 20px;
-	padding: 2rem;
-}
-
-.left-col {
-	width: 60%;
-	margin: 2vh 4vh;
-}
-
-.main-card-img {
-	height: 300px;
-	width: 300px;
-	border-radius: 10px;
-}
-
-.card-pre-title {
-	color: #cdced9;
-	text-transform: uppercase;
-	margin: 2rem 0;
-}
-
-.card-title {
-	font-size: 3rem;
-	font-weight: 600;
-	line-height: 3rem;
-}
-
-.card-text {
-	font-weight: 400;
-	margin-top: 2rem;
-	margin-right: 3rem;
-	margin-bottom: 1.5rem;
-}
-
-.right-col {
-	width: 40%;
-}
-
-.right-col > * {
-	display: flex;
-	align-items: center;
-	height: 33.33%;
-	margin: 0 2rem;
-}
-
-.right-col > *:nth-child(1),
-.right-col > *:nth-child(2) {
-	border-bottom: 1px solid #ffffff;
-}
-</style>
+<style scoped></style>
