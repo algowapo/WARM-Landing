@@ -1,40 +1,54 @@
 <template>
-	<section id="funciones">
-		<h2 class="function-title">Funciones</h2>
-		<div class="first-row">
-			<div class="img-col">
+	<section id="funciones" class="space-y-20">
+		<h2 class="font-semibold mb-10 text-5xl">Funciones</h2>
+		<div class="w-full lg:w-9/12 flex flex-col items-center lg:flex-row mb-10">
+			<div class="max-w-[50%] flex justify-center lg:justify-start">
 				<img
 					class="function-image"
 					src="../assets/PlaceholderHolo.png"
 					alt="PlaceHolder Image"
 				/>
 			</div>
-			<div class="text-col">
-				<h3 class="text-col-title">Simple Header</h3>
-				<p class="text-col-text">
+			<div class="w-9/12 lg:1/12">
+				<h3
+					class="text-4xl font-semibold text-center lg:text-left mt-10 lg:mt-0 mb-8"
+				>
+					Simple Header
+				</h3>
+				<p class="font-light text-center lg:text-left mb-8">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat ut
 					bibendum nunc, sapien volutpat morbi. Elit, augue in risus
 					pellentesque ridiculus id dictum congue. Dignissim.
 				</p>
-				<MainButton text="Button" />
+				<div class="flex justify-center lg:justify-start my-8">
+					<MainButton text="Button" />
+				</div>
 			</div>
 		</div>
-		<div class="first-row">
-			<div class="text-col">
-				<h3 class="text-col-title">Simple Header</h3>
-				<p class="text-col-text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat ut
-					bibendum nunc, sapien volutpat morbi. Elit, augue in risus
-					pellentesque ridiculus id dictum congue. Dignissim.
-				</p>
-				<MainButton text="Button" />
-			</div>
-			<div class="img-col">
+		<div
+			class="w-full lg:w-9/12 flex flex-col items-center lg:flex-row-reverse mb-10"
+		>
+			<div class="max-w-[50%] flex justify-center lg:justify-end">
 				<img
 					class="function-image"
 					src="../assets/PlaceholderHolo.png"
 					alt="PlaceHolder Image"
 				/>
+			</div>
+			<div class="w-9/12 lg:1/12">
+				<h3
+					class="text-4xl font-semibold text-center lg:text-left mt-10 lg:mt-0 mb-8"
+				>
+					Simple Header
+				</h3>
+				<p class="font-light text-center lg:text-left mb-8">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat ut
+					bibendum nunc, sapien volutpat morbi. Elit, augue in risus
+					pellentesque ridiculus id dictum congue. Dignissim.
+				</p>
+				<div class="flex justify-center lg:justify-start my-8">
+					<MainButton text="Button" />
+				</div>
 			</div>
 		</div>
 	</section>
@@ -52,22 +66,10 @@ export default { components: { MainButton } }
 	flex-direction: column;
 }
 
-.function-title {
-	font-size: 3rem;
-	font-weight: 600;
-	margin-bottom: 4rem;
-}
-
 .first-row {
 	display: flex;
 	width: 70%;
 	margin-bottom: 5rem;
-}
-
-.img-col {
-	width: 50%;
-	display: flex;
-	justify-content: center;
 }
 
 .function-image {
@@ -88,12 +90,6 @@ export default { components: { MainButton } }
 .text-col-title {
 	font-size: 2.5rem;
 	font-weight: 600;
-	margin-bottom: 2rem;
-}
-
-.text-col-text {
-	font-size: 1rem;
-	font-weight: 300;
 	margin-bottom: 2rem;
 }
 
