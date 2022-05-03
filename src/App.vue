@@ -3,9 +3,10 @@
 		<NavBar />
 		<Home />
 		<Companies />
-		<Section1 />
+		<Main />
 		<Functions />
 		<Plans />
+		<Footer />
 	</main>
 </template>
 
@@ -13,11 +14,12 @@
 import NavBar from './components/NavBar.vue'
 import Home from './sections/Home.vue'
 import Companies from './sections/Companies.vue'
-import Section1 from './sections/Section1.vue'
+import Main from './sections/Main.vue'
 import Functions from './sections/Functions.vue'
 import Plans from './sections/Plans.vue'
+import Footer from './sections/Footer.vue'
 export default {
-	components: { NavBar, Home, Companies, Section1, Functions, Plans },
+	components: { NavBar, Home, Companies, Main, Functions, Plans, Footer },
 }
 </script>
 
