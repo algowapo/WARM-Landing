@@ -1,10 +1,10 @@
 <template>
-	<section id="planes">
-		<h2 class="plan-title">Escoge tu plan</h2>
-		<div class="cards-row">
-			<TallCard />
-			<TallCard />
-			<TallCard />
+	<section id="planes" class="py-40">
+		<h2 class="text-5xl font-semibold mb-20">Escoge tu plan</h2>
+		<div class="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
+			<TallCard class="lg:translate-y-8" />
+			<TallCard class="bg-[#2C2D3A]" />
+			<TallCard class="lg:translate-y-8" />
 		</div>
 	</section>
 </template>
@@ -19,11 +19,6 @@ export default { components: { TallCard } }
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-}
-.plan-title {
-	font-size: 3rem;
-	font-weight: 600;
-	margin-bottom: 4rem;
 }
 
 .cards-row {
